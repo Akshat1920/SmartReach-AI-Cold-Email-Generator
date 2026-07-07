@@ -5,16 +5,16 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import VerifyOtp from "./pages/VerifyOtp";
 import Dashboard from "./pages/Dashboard";
-import Toaster from 'react-hot-toast'
+import {Toaster} from 'react-hot-toast'
 import { useAppContext } from "./context/AppContext";
 
 
 
 function App() {
   
-  const {user , Loading} = useAppContext();
+  const {user , loading} = useAppContext();
 
-  if(Loading){
+  if(loading){
     return <p>Loading .....</p>;
   }
   
